@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:db
+    username: sa
+    driver-class-name: org.h2.Driver
+  mvc:
+    static-path-pattern: /images
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/static,classpath:/resources/,classpath:/static/,classpath:/public/,file:D:/images/
+  servlet:
+    multipart:
+      max-file-size: 10MB
+file:
+  upload: D:/images
+
+web:
+  upload-path: D:/images/

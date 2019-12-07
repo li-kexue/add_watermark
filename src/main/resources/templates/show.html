@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h2>hello world</h2>
+    <img th:src="@{${data}}"/><br>
+    <form method="get" action="/download">
+        <input name="fileName" th:value="${data}"/>
+        <button>下载</button>
+    </form>
+</div>
+
+</body>
+</html>
