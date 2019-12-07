@@ -1,2 +1,2 @@
 # add_watermark
-为图片添加水印
+学习使用Thumbnails类为图片添加水印
